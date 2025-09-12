@@ -1,0 +1,14 @@
+#include <stdio.h>
+void avg(float ,float ,float *);
+int main() {
+    int n1,n2,n3                                           ;
+    float result;
+    printf("Enter Number 1 and 2 : ");
+    scanf("%f%f",&n1,&n2);
+    avg(n1,n2,&result);
+    printf("Average is %.2f ",result);
+    return 0;
+}
+void avg(float a, float b, float *result ){
+    *result=(a+b)/2;
+}
